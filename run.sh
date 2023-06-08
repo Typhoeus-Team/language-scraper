@@ -3,5 +3,7 @@
 # Clean out existing builds
 rm -rf ./output
 
-# Execute Spider
-scrapy runspider spanish.py -o output/spanish.csv
+# Execute Spiders
+cd ./crawlers/
+scrapy crawl spanish -o ../output/spanish.csv
+cd -
