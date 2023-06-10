@@ -14,3 +14,11 @@ class ConjugationItem(scrapy.Item):
     plural_first = scrapy.Field()
     plural_second = scrapy.Field()
     plural_third = scrapy.Field()
+
+class ParticipleItem(scrapy.Item):
+    infinitive = scrapy.Field()
+    infinitive_pronunciation = scrapy.Field()
+    present_participle = scrapy.Field()
+    present_participle_pronunciation = scrapy.Field()
+    past_participle = scrapy.Field()
+    past_participle_pronunciation = scrapy.Field()
